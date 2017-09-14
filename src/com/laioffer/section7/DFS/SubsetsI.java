@@ -19,9 +19,10 @@ public class SubsetsI {
 			return;
 		}
 		
-		subSetsHelper(arraySet, currentSet, index + 1, result);
 		subSetsHelper(arraySet, currentSet.append(arraySet[index]), index + 1, result);
 		currentSet.deleteCharAt(currentSet.length() - 1);
+		subSetsHelper(arraySet, currentSet, index + 1, result);
+		
 	}
 	
 	public static void main(String[] args) {
