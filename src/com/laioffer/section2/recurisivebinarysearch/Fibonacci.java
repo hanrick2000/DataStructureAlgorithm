@@ -16,7 +16,7 @@ public class Fibonacci {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Fibonacci solution = new Fibonacci();
-		long result = solution.fibonacci(40);
+		long result = solution.fibonacci(2);
 		System.out.println("The result of Fibonacci is " + result);		
 	}
 }

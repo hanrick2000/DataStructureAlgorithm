@@ -10,7 +10,6 @@ public class LargestSubMatrixSum {
 			int[] cur = new int[column];
 			for(int j = i; j < row; j++) {
 				add(cur, matrix[j]);
-				
 				result = Math.max(result, max(cur));
 			}
 		}
